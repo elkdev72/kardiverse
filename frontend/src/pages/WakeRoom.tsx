@@ -1,10 +1,54 @@
-import { Play, Smartphone, QrCode, Headphones, Eye, Heart } from "lucide-react";
+import { Play, Smartphone, QrCode, Headphones, Eye, Heart, Loader2, Video, Globe, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
+import { useWakeRoomExperiences, useWakeRoomFeatures, useFeaturedExperiences } from "@/hooks/use-api";
+import { type WakeRoomExperience, type WakeRoomFeature } from "@/lib/api";
 
 const WakeRoom = () => {
+  const { data: experiences, isLoading: isLoadingExperiences } = useWakeRoomExperiences();
+  const { data: features, isLoading: isLoadingFeatures } = useWakeRoomFeatures();
+  const { data: featuredExperiences } = useFeaturedExperiences();
+
+  // Icon mapping for WakeRoom features
+  const getFeatureIcon = (iconName: string) => {
+    switch (iconName.toLowerCase()) {
+      case 'eye':
+        return Eye;
+      case 'headphones':
+        return Headphones;
+      case 'qrcode':
+        return QrCode;
+      case 'smartphone':
+        return Smartphone;
+      case 'video':
+        return Video;
+      case 'globe':
+        return Globe;
+      case 'zap':
+        return Zap;
+      case 'heart':
+        return Heart;
+      default:
+        return Eye;
+    }
+  };
+
+  if (isLoadingExperiences || isLoadingFeatures) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-sacred-cream via-peaceful-white to-blessed-beige">
+        <Navigation />
+        <main className="container mx-auto px-4 py-16">
+          <div className="text-center py-16">
+            <Loader2 className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-divine-gold mx-auto mb-4" />
+            <p className="text-muted-foreground">Loading WakeRoom experiences...</p>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-sacred-cream via-peaceful-white to-blessed-beige">
       <Navigation />
@@ -19,6 +63,59 @@ const WakeRoom = () => {
             Immerse yourself in a sacred digital space where memories come alive through augmented reality and immersive storytelling.
           </p>
         </div>
+
+        {/* Featured Experiences */}
+        {featuredExperiences && featuredExperiences.length > 0 && (
+          <div className="max-w-6xl mx-auto mb-16">
+            <h2 className="text-3xl font-light text-center mb-12 text-primary">Featured Experiences</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featuredExperiences.map((experience) => (
+                <Card key={experience.id} className="overflow-hidden bg-peaceful-white/80 backdrop-blur-sm border-blessed-beige/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                  {experience.thumbnail_url && (
+                    <div className="aspect-video bg-gradient-to-br from-blessed-beige/30 to-divine-gold/10 relative">
+                      <img 
+                        src={experience.thumbnail_url} 
+                        alt={experience.title}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                        <Button
+                          className="w-20 h-20 rounded-full bg-divine-gold/20 hover:bg-divine-gold/30 border-2 border-divine-gold/40 backdrop-blur-sm transition-all duration-500 hover:scale-110"
+                          variant="ghost"
+                        >
+                          <Play className="w-8 h-8 text-eternal-bronze ml-1" />
+                        </Button>
+                      </div>
+                      <div className="absolute top-3 left-3">
+                        <Badge className="bg-divine-gold/20 text-eternal-bronze border-divine-gold/30">
+                          {experience.experience_type}
+                        </Badge>
+                      </div>
+                    </div>
+                  )}
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-3 text-primary">{experience.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      {experience.description}
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <Badge variant="outline" className="text-xs">
+                        {experience.duration_minutes} min
+                      </Badge>
+                      {experience.qr_code_required && (
+                        <QrCode className="w-4 h-4 text-divine-gold" />
+                      )}
+                    </div>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Main Demo Video */}
         <div className="max-w-5xl mx-auto mb-16">
@@ -47,37 +144,42 @@ const WakeRoom = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          <Card className="p-8 text-center bg-peaceful-white/80 backdrop-blur-sm border-blessed-beige/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-divine-gold/20 flex items-center justify-center">
-              <Eye className="w-8 h-8 text-eternal-bronze" />
-            </div>
-            <h3 className="text-xl font-semibold mb-4 text-primary">Augmented Reality</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Experience memories in 3D space with interactive AR elements that bring stories to life.
-            </p>
-          </Card>
+        {features && features.length > 0 && (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {features.slice(0, 6).map((feature) => {
+              const IconComponent = getFeatureIcon(feature.icon_name);
+              return (
+                <Card key={feature.id} className="p-8 text-center bg-peaceful-white/80 backdrop-blur-sm border-blessed-beige/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                  <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-divine-gold/20 flex items-center justify-center">
+                    <IconComponent className="w-8 h-8 text-eternal-bronze" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-4 text-primary">{feature.name}</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {feature.description}
+                  </p>
+                  {feature.feature_type && (
+                    <Badge variant="outline" className="mt-4 text-xs">
+                      {feature.feature_type}
+                    </Badge>
+                  )}
+                </Card>
+              );
+            })}
+          </div>
+        )}
 
-          <Card className="p-8 text-center bg-peaceful-white/80 backdrop-blur-sm border-blessed-beige/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-heavenly-blue/20 flex items-center justify-center">
-              <Headphones className="w-8 h-8 text-primary" />
+        {/* No Features State */}
+        {(!features || features.length === 0) && (
+          <div className="text-center py-16 mb-16">
+            <div className="max-w-md mx-auto">
+              <Eye className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-primary mb-2">No WakeRoom Features</h3>
+              <p className="text-muted-foreground">
+                WakeRoom features are not available at the moment.
+              </p>
             </div>
-            <h3 className="text-xl font-semibold mb-4 text-primary">Spatial Audio</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Immersive soundscapes and voice recordings create a deeply personal experience.
-            </p>
-          </Card>
-
-          <Card className="p-8 text-center bg-peaceful-white/80 backdrop-blur-sm border-blessed-beige/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-divine-gold/20 flex items-center justify-center">
-              <QrCode className="w-8 h-8 text-eternal-bronze" />
-            </div>
-            <h3 className="text-xl font-semibold mb-4 text-primary">QR Access</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Instant access through QR codes on memorial cards for seamless experience activation.
-            </p>
-          </Card>
-        </div>
+          </div>
+        )}
 
         {/* How It Works Section */}
         <div className="max-w-4xl mx-auto mb-16">

@@ -1,153 +1,91 @@
-import { Heart, Music, BookOpen, Camera, Cross, Moon } from "lucide-react";
+import { useState } from "react";
+import { Heart, Music, BookOpen, Camera, Cross, Moon, Search, Filter } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import MemoryCard from "@/components/MemoryCard";
-
-// Import generated images
-import christianWoman2 from "@/assets/christian-woman-2.jpg";
-import christianMan2 from "@/assets/christian-man-2.jpg";
-import christianWoman3 from "@/assets/christian-woman-3.jpg";
-import christianMan3 from "@/assets/christian-man-3.jpg";
-import muslimWoman1 from "@/assets/muslim-woman-1.jpg";
-import muslimMan1 from "@/assets/muslim-man-1.jpg";
-import muslimWoman2 from "@/assets/muslim-woman-2.jpg";
-import muslimMan2 from "@/assets/muslim-man-2.jpg";
-import muslimWoman3 from "@/assets/muslim-woman-3.jpg";
-import muslimMan3 from "@/assets/muslim-man-3.jpg";
+import { useMemorials, useMemorialsByReligion, useMemorialsByCategory, useSearchMemorials } from "@/hooks/use-api";
+import { type Memorial } from "@/lib/api";
 
 const Gallery = () => {
-  const memoryCards: Array<{
-    id: number;
-    name: string;
-    dates: string;
-    image: string;
-    religion: "Christian" | "Muslim";
-    categories: string[];
-    description: string;
-    qrCode: boolean;
-  }> = [
-    {
-      id: 1,
-      name: "Margaret Rose Johnson",
-      dates: "1934 - 2024",
-      image: "/lovable-uploads/c9598d29-7ae3-44ae-b7b4-afd5a49d30d9.png",
-      religion: "Christian",
-      categories: ["Life Moments", "Family Tree", "Spiritual Room"],
-      description: "A devoted mother and grandmother who touched many lives with her kindness.",
-      qrCode: true
-    },
-    {
-      id: 2,
-      name: "Robert William Smith",
-      dates: "1942 - 2024",
-      image: "/lovable-uploads/5afb8904-fd85-4b6d-aeb9-d8a1bf6dc1e7.png",
-      religion: "Christian",
-      categories: ["Voice & Stories", "Life Moments", "Family Tree"],
-      description: "A veteran and storyteller who shared wisdom through his experiences.",
-      qrCode: true
-    },
-    {
-      id: 3,
-      name: "Fatima Al-Zahra",
-      dates: "1945 - 2024",
-      image: muslimWoman1,
-      religion: "Muslim",
-      categories: ["Spiritual Room", "Family Tree", "Life Moments"],
-      description: "A faithful servant of Allah who dedicated her life to her family and community.",
-      qrCode: true
-    },
-    {
-      id: 4,
-      name: "Ahmad Hassan",
-      dates: "1938 - 2024",
-      image: muslimMan1,
-      religion: "Muslim",
-      categories: ["Voice & Stories", "Spiritual Room", "Life Moments"],
-      description: "A scholar and imam who guided many on the path of righteousness.",
-      qrCode: true
-    },
-    {
-      id: 5,
-      name: "Sarah Elizabeth Thompson",
-      dates: "1950 - 2024",
-      image: christianWoman2,
-      religion: "Christian",
-      categories: ["Life Moments", "Voice & Stories", "Family Tree"],
-      description: "A teacher and pianist who spread joy through music and education.",
-      qrCode: true
-    },
-    {
-      id: 6,
-      name: "Michael David Rodriguez",
-      dates: "1948 - 2024",
-      image: christianMan2,
-      religion: "Christian",
-      categories: ["Family Tree", "Life Moments", "Voice & Stories"],
-      description: "A carpenter and family man who built both homes and lasting relationships.",
-      qrCode: true
-    },
-    {
-      id: 7,
-      name: "Aisha Mahmoud",
-      dates: "1952 - 2024",
-      image: muslimWoman2, 
-      religion: "Muslim",
-      categories: ["Spiritual Room", "Voice & Stories", "Family Tree"],
-      description: "A midwife who helped bring new life into the world with compassion.",
-      qrCode: true
-    },
-    {
-      id: 8,
-      name: "Omar Abdullah",
-      dates: "1940 - 2024",
-      image: muslimMan2,
-      religion: "Muslim", 
-      categories: ["Life Moments", "Family Tree", "Spiritual Room"],
-      description: "A merchant and philanthropist who shared his blessings with those in need.",
-      qrCode: true
-    },
-    {
-      id: 9,
-      name: "Dorothy Grace Williams",
-      dates: "1935 - 2024",
-      image: christianWoman3,
-      religion: "Christian",
-      categories: ["Spiritual Room", "Life Moments", "Voice & Stories"],
-      description: "A choir director who led congregations in worship for over 40 years.",
-      qrCode: true
-    },
-    {
-      id: 10,
-      name: "James Patrick O'Connor",
-      dates: "1944 - 2024", 
-      image: christianMan3,
-      religion: "Christian",
-      categories: ["Voice & Stories", "Life Moments", "Family Tree"],
-      description: "A firefighter and community leader who served others throughout his life.",
-      qrCode: true
-    },
-    {
-      id: 11,
-      name: "Khadija Ibrahim",
-      dates: "1947 - 2024",
-      image: muslimWoman3,
-      religion: "Muslim",
-      categories: ["Family Tree", "Spiritual Room", "Life Moments"],
-      description: "A mother of seven who raised her children with love and Islamic values.",
-      qrCode: true
-    },
-    {
-      id: 12,
-      name: "Yusuf Mohamed",
-      dates: "1943 - 2024",
-      image: muslimMan3, 
-      religion: "Muslim",
-      categories: ["Life Moments", "Voice & Stories", "Spiritual Room"],
-      description: "An engineer and community builder who helped construct mosques and schools.",
-      qrCode: true
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedReligion, setSelectedReligion] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [viewMode, setViewMode] = useState<'all' | 'christian' | 'muslim'>('all');
+
+  // API queries
+  const { data: allMemorials, isLoading: isLoadingAll, error: errorAll } = useMemorials();
+  const { data: christianMemorials, isLoading: isLoadingChristian } = useMemorialsByReligion('Christian');
+  const { data: muslimMemorials, isLoading: isLoadingMuslim } = useMemorialsByReligion('Muslim');
+  const { data: searchResults, isLoading: isLoadingSearch } = useSearchMemorials(searchQuery);
+
+  // Determine which data to display
+  const getDisplayData = (): { data: Memorial[] | undefined; isLoading: boolean; error: any } => {
+    if (searchQuery && searchQuery.length > 2) {
+      return { data: searchResults?.results, isLoading: isLoadingSearch, error: null };
     }
-  ];
+    
+    if (viewMode === 'christian') {
+      return { data: christianMemorials, isLoading: isLoadingChristian, error: null };
+    }
+    
+    if (viewMode === 'muslim') {
+      return { data: muslimMemorials, isLoading: isLoadingMuslim, error: null };
+    }
+    
+    return { data: allMemorials?.results, isLoading: isLoadingAll, error: errorAll };
+  };
+
+  const { data: displayData, isLoading, error } = getDisplayData();
+
+  const handleReligionFilter = (religion: string) => {
+    if (viewMode === religion.toLowerCase()) {
+      setViewMode('all');
+    } else {
+      setViewMode(religion.toLowerCase() as 'christian' | 'muslim');
+    }
+    setSearchQuery("");
+    setSelectedCategory(null);
+  };
+
+  const handleCategoryFilter = (category: string) => {
+    if (selectedCategory === category) {
+      setSelectedCategory(null);
+    } else {
+      setSelectedCategory(category);
+    }
+    setSearchQuery("");
+  };
+
+  const clearFilters = () => {
+    setSearchQuery("");
+    setSelectedReligion(null);
+    setSelectedCategory(null);
+    setViewMode('all');
+  };
+
+  const isLoadingAny = isLoading || isLoadingAll || isLoadingChristian || isLoadingMuslim || isLoadingSearch;
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-sacred-cream via-peaceful-white to-blessed-beige">
+        <Navigation />
+        <main className="container mx-auto px-4 py-16">
+          <div className="text-center">
+            <h1 className="text-4xl font-light mb-6 text-red-600">Error Loading Memorials</h1>
+            <p className="text-lg text-muted-foreground mb-4">
+              Unable to load memorial data. Please try again later.
+            </p>
+            <Button onClick={() => window.location.reload()} variant="outline">
+              Retry
+            </Button>
+          </div>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-sacred-cream via-peaceful-white to-blessed-beige">
@@ -164,27 +102,127 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Filter Badges */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <Badge variant="secondary" className="px-4 py-2 bg-divine-gold/20 text-eternal-bronze border-divine-gold/30">
-            <Cross className="w-4 h-4 mr-2" />
-            Christian
-          </Badge>
-          <Badge variant="secondary" className="px-4 py-2 bg-heavenly-blue/20 text-primary border-heavenly-blue/30">
-            <Moon className="w-4 h-4 mr-2" />
-            Muslim
-          </Badge>
-          <Badge variant="outline" className="px-4 py-2">
-            All Memories
-          </Badge>
+        {/* Search and Filters */}
+        <div className="max-w-2xl mx-auto mb-12">
+          <div className="relative mb-6">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
+            <Input
+              placeholder="Search memorials by name or description..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-10 pr-4 py-3 bg-peaceful-white/80 border-blessed-beige/30"
+            />
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-2 mb-4">
+            <Button
+              variant={viewMode === 'all' ? 'default' : 'outline'}
+              size="sm"
+              onClick={() => setViewMode('all')}
+              className="bg-divine-gold/20 text-eternal-bronze border-divine-gold/30 hover:bg-divine-gold/30"
+            >
+              All Memories
+            </Button>
+            <Button
+              variant={viewMode === 'christian' ? 'default' : 'outline'}
+              size="sm"
+              onClick={() => handleReligionFilter('Christian')}
+              className="bg-divine-gold/20 text-eternal-bronze border-divine-gold/30 hover:bg-divine-gold/30"
+            >
+              <Cross className="w-4 h-4 mr-2" />
+              Christian
+            </Button>
+            <Button
+              variant={viewMode === 'muslim' ? 'default' : 'outline'}
+              size="sm"
+              onClick={() => handleReligionFilter('Muslim')}
+              className="bg-heavenly-blue/20 text-primary border-heavenly-blue/30 hover:bg-heavenly-blue/30"
+            >
+              <Moon className="w-4 h-4 mr-2" />
+              Muslim
+            </Button>
+          </div>
+
+          {(searchQuery || viewMode !== 'all') && (
+            <div className="text-center">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={clearFilters}
+                className="text-muted-foreground hover:text-primary"
+              >
+                Clear Filters
+              </Button>
+            </div>
+          )}
         </div>
 
-        {/* Memory Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {memoryCards.map((card) => (
-            <MemoryCard key={card.id} {...card} />
+        {/* Category Filter Badges */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {['Life Moments', 'Voice & Stories', 'Family Tree', 'Spiritual Room'].map((category) => (
+            <Badge
+              key={category}
+              variant={selectedCategory === category ? 'default' : 'outline'}
+              className={`px-4 py-2 cursor-pointer transition-all duration-300 ${
+                selectedCategory === category
+                  ? 'bg-divine-gold text-white'
+                  : 'bg-peaceful-white/80 text-muted-foreground border-blessed-beige/30 hover:bg-divine-gold/10'
+              }`}
+              onClick={() => handleCategoryFilter(category)}
+            >
+              {category === "Life Moments" && <Heart className="w-4 h-4 mr-2" />}
+              {category === "Voice & Stories" && <Music className="w-4 h-4 mr-2" />}
+              {category === "Family Tree" && <BookOpen className="w-4 h-4 mr-2" />}
+              {category === "Spiritual Room" && <Camera className="w-4 h-4 mr-2" />}
+              {category}
+            </Badge>
           ))}
         </div>
+
+        {/* Loading State */}
+        {isLoadingAny && (
+          <div className="text-center py-16">
+            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-divine-gold"></div>
+            <p className="mt-4 text-muted-foreground">Loading memorials...</p>
+          </div>
+        )}
+
+        {/* Memory Cards Grid */}
+        {!isLoadingAny && displayData && displayData.length > 0 && (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {displayData.map((memorial) => (
+              <MemoryCard key={memorial.id} memorial={memorial} />
+            ))}
+          </div>
+        )}
+
+        {/* No Results */}
+        {!isLoadingAny && displayData && displayData.length === 0 && (
+          <div className="text-center py-16">
+            <div className="max-w-md mx-auto">
+              <Heart className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-primary mb-2">No Memorials Found</h3>
+              <p className="text-muted-foreground mb-4">
+                {searchQuery 
+                  ? `No memorials found matching "${searchQuery}"`
+                  : 'No memorials available with the current filters'
+                }
+              </p>
+              <Button onClick={clearFilters} variant="outline">
+                Clear Filters
+              </Button>
+            </div>
+          </div>
+        )}
+
+        {/* Results Count */}
+        {!isLoadingAny && displayData && displayData.length > 0 && (
+          <div className="text-center mt-8 text-muted-foreground">
+            Showing {displayData.length} memorial{displayData.length !== 1 ? 's' : ''}
+            {searchQuery && ` matching "${searchQuery}"`}
+            {viewMode !== 'all' && ` (${viewMode} faith)`}
+          </div>
+        )}
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">

@@ -2,19 +2,25 @@ import { QrCode, Heart, Music, Users, TreePine, Cross, Moon } from "lucide-react
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { type Memorial } from "@/lib/api";
 
 interface MemoryCardProps {
-  id: number;
-  name: string;
-  dates: string;
-  image: string;
-  religion: "Christian" | "Muslim";
-  categories: string[];
-  description: string;
-  qrCode: boolean;
+  memorial: Memorial;
 }
 
-const MemoryCard = ({ name, dates, image, religion, categories, description, qrCode }: MemoryCardProps) => {
+const MemoryCard = ({ memorial }: MemoryCardProps) => {
+  const {
+    name,
+    dates,
+    image_url,
+    religion,
+    categories,
+    description,
+    qr_code,
+    religion_icon,
+    religion_color_class
+  } = memorial;
+
   const getCategoryIcon = (category: string) => {
     switch (category) {
       case "Life Moments":
@@ -31,23 +37,39 @@ const MemoryCard = ({ name, dates, image, religion, categories, description, qrC
   };
 
   const getReligionColor = (religion: string) => {
+    if (religion_color_class) {
+      return religion_color_class;
+    }
     return religion === "Christian" 
       ? "bg-divine-gold/20 text-eternal-bronze border-divine-gold/30"
       : "bg-heavenly-blue/20 text-primary border-heavenly-blue/30";
   };
+
+  const getReligionIcon = (religion: string) => {
+    if (religion_icon) {
+      return religion_icon;
+    }
+    return religion === "Christian" ? Cross : Moon;
+  };
+
+  const displayImage = image_url || '/placeholder-memorial.jpg';
 
   return (
     <Card className="group overflow-hidden bg-peaceful-white/80 backdrop-blur-sm border-blessed-beige/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
       {/* Image Header */}
       <div className="relative h-48 bg-blessed-beige/30">
         <img 
-          src={image} 
+          src={displayImage} 
           alt={name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.src = '/placeholder-memorial.jpg';
+          }}
         />
         
         {/* QR Code Badge */}
-        {qrCode && (
+        {qr_code && (
           <div className="absolute top-3 right-3">
             <div className="w-8 h-8 rounded-full bg-divine-gold/20 backdrop-blur-sm flex items-center justify-center">
               <QrCode className="w-4 h-4 text-eternal-bronze" />
@@ -58,7 +80,7 @@ const MemoryCard = ({ name, dates, image, religion, categories, description, qrC
         {/* Religion Badge */}
         <div className="absolute top-3 left-3">
           <Badge className={getReligionColor(religion)}>
-            {religion === "Christian" ? (
+            {getReligionIcon(religion) === Cross ? (
               <Cross className="w-3 h-3 mr-1" />
             ) : (
               <Moon className="w-3 h-3 mr-1" />
