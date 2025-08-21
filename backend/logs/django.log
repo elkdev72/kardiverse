@@ -57,3 +57,558 @@ INFO 2025-08-20 21:51:50,450 basehttp 153407 139938356000448 "GET /static/admin/
 INFO 2025-08-20 21:51:50,605 basehttp 153407 139938356000448 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
 INFO 2025-08-20 21:52:11,614 basehttp 153407 139938356000448 "GET /admin/wakeroom/wakeroomsession/ HTTP/1.1" 200 15943
 INFO 2025-08-20 21:52:11,700 basehttp 153407 139938356000448 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-20 21:59:15,338 basehttp 153407 139938569025216 "GET /admin/wakeroom/wakeroomsession/ HTTP/1.1" 200 15943
+INFO 2025-08-20 21:59:15,440 basehttp 153407 139938347607744 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-08-20 21:59:15,458 basehttp 153407 139938569025216 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 05:24:19,255 autoreload 3680 140132598229952 Watching for file changes with StatReloader
+INFO 2025-08-21 05:29:27,900 basehttp 3680 140132525180608 "OPTIONS /api/v1/memorials/ HTTP/1.1" 200 0
+INFO 2025-08-21 05:29:27,923 basehttp 3680 140132525180608 "OPTIONS /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 0
+INFO 2025-08-21 05:29:27,924 basehttp 3680 140132516787904 "OPTIONS /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 0
+INFO 2025-08-21 05:29:28,036 basehttp 3680 140132516787904 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 05:29:28,087 basehttp 3680 140132525180608 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1684
+INFO 2025-08-21 05:29:28,121 basehttp 3680 140132300617408 "GET /api/v1/memorials/ HTTP/1.1" 200 2455
+INFO 2025-08-21 05:30:22,608 basehttp 3680 140132525180608 "GET /api/v1/memorials/ HTTP/1.1" 200 2455
+INFO 2025-08-21 05:30:22,613 basehttp 3680 140132300617408 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 05:30:22,619 basehttp 3680 140132516787904 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1684
+INFO 2025-08-21 05:31:03,944 basehttp 3680 140132516787904 "OPTIONS /api/v1/wakeroom/experiences/ HTTP/1.1" 200 0
+INFO 2025-08-21 05:31:03,981 basehttp 3680 140132516787904 "OPTIONS /api/v1/wakeroom/features/ HTTP/1.1" 200 0
+INFO 2025-08-21 05:31:04,011 basehttp 3680 140132525180608 "OPTIONS /api/v1/wakeroom/experiences/featured/ HTTP/1.1" 200 0
+INFO 2025-08-21 05:31:04,084 basehttp 3680 140132300617408 "GET /api/v1/wakeroom/experiences/ HTTP/1.1" 200 446
+INFO 2025-08-21 05:31:04,159 basehttp 3680 140132516787904 "GET /api/v1/wakeroom/experiences/featured/ HTTP/1.1" 200 396
+INFO 2025-08-21 05:31:04,163 basehttp 3680 140132525180608 "GET /api/v1/wakeroom/features/ HTTP/1.1" 200 702
+INFO 2025-08-21 05:31:08,478 basehttp 3680 140132516787904 "OPTIONS /api/v1/timeline/stories/ HTTP/1.1" 200 0
+INFO 2025-08-21 05:31:08,479 basehttp 3680 140132525180608 "OPTIONS /api/v1/timeline/phases/ HTTP/1.1" 200 0
+INFO 2025-08-21 05:31:08,540 basehttp 3680 140132516787904 "GET /api/v1/timeline/phases/ HTTP/1.1" 200 2905
+INFO 2025-08-21 05:31:08,548 basehttp 3680 140132525180608 "GET /api/v1/timeline/stories/ HTTP/1.1" 200 539
+INFO 2025-08-21 05:31:31,089 basehttp 3680 140132292224704 "GET /admin/ HTTP/1.1" 200 13657
+INFO 2025-08-21 05:31:31,221 basehttp 3680 140132292224704 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-08-21 05:31:32,462 basehttp 3680 140132292224704 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+WARNING 2025-08-21 05:31:32,832 log 3680 140132292224704 Not Found: /favicon.ico
+WARNING 2025-08-21 05:31:32,835 basehttp 3680 140132292224704 "GET /favicon.ico HTTP/1.1" 404 2860
+INFO 2025-08-21 05:31:35,722 basehttp 3680 140132292224704 "GET /admin/memorials/memorial/ HTTP/1.1" 200 24179
+INFO 2025-08-21 05:31:35,834 basehttp 3680 140132292224704 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 05:31:35,868 basehttp 3680 140132283832000 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-08-21 05:37:39,782 basehttp 3680 140132516787904 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 05:37:39,783 basehttp 3680 140132283832000 "GET /api/v1/memorials/ HTTP/1.1" 200 2455
+INFO 2025-08-21 05:37:39,783 basehttp 3680 140132525180608 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1684
+INFO 2025-08-21 05:37:44,268 basehttp 3680 140132300617408 "GET /admin/memorials/memorial/6/change/ HTTP/1.1" 200 26700
+INFO 2025-08-21 05:37:44,462 basehttp 3680 140132300617408 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 05:37:44,465 basehttp 3680 140132275439296 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-08-21 05:37:44,462 basehttp 3680 140132267046592 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-08-21 05:37:46,125 basehttp 3680 140132275439296 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+INFO 2025-08-21 05:37:46,607 basehttp 3680 140132275439296 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-08-21 05:38:33,616 basehttp 3680 140132275439296 "POST /admin/memorials/memorial/6/change/ HTTP/1.1" 302 0
+INFO 2025-08-21 05:38:33,796 basehttp 3680 140132275439296 "GET /admin/memorials/memorial/ HTTP/1.1" 200 24417
+INFO 2025-08-21 05:38:34,027 basehttp 3680 140132275439296 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 05:38:47,510 basehttp 3680 140132525180608 "GET /api/v1/memorials/ HTTP/1.1" 200 2615
+INFO 2025-08-21 05:38:47,523 basehttp 3680 140132283832000 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1844
+INFO 2025-08-21 05:38:47,526 basehttp 3680 140132516787904 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 05:38:48,019 basehttp 3680 140132292224704 "GET /media/memorials/WhatsApp_Image_2025-08-21_at_8.37.24_AM.jpeg HTTP/1.1" 200 23052
+INFO 2025-08-21 07:36:57,112 basehttp 3680 140132292224704 "GET /api/v1/memorials/ HTTP/1.1" 200 2615
+INFO 2025-08-21 07:36:57,116 basehttp 3680 140132516787904 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1844
+INFO 2025-08-21 07:36:57,121 basehttp 3680 140132283832000 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 07:36:57,642 basehttp 3680 140132525180608 "GET /media/memorials/WhatsApp_Image_2025-08-21_at_8.37.24_AM.jpeg HTTP/1.1" 304 0
+INFO 2025-08-21 07:46:41,271 basehttp 3680 140132283832000 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1844
+INFO 2025-08-21 07:46:41,273 basehttp 3680 140132516787904 "GET /api/v1/memorials/ HTTP/1.1" 200 2615
+INFO 2025-08-21 07:46:41,277 basehttp 3680 140132292224704 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 07:49:17,058 basehttp 3680 140132292224704 "GET /api/v1/wakeroom/experiences/ HTTP/1.1" 200 446
+INFO 2025-08-21 07:49:17,073 basehttp 3680 140132516787904 "GET /api/v1/wakeroom/features/ HTTP/1.1" 200 702
+INFO 2025-08-21 07:49:17,076 basehttp 3680 140132283832000 "GET /api/v1/wakeroom/experiences/featured/ HTTP/1.1" 200 396
+INFO 2025-08-21 07:49:21,034 basehttp 3680 140132283832000 "GET /api/v1/timeline/phases/ HTTP/1.1" 200 2905
+INFO 2025-08-21 07:49:21,057 basehttp 3680 140132516787904 "GET /api/v1/timeline/stories/ HTTP/1.1" 200 539
+INFO 2025-08-21 07:49:22,707 basehttp 3680 140132516787904 "OPTIONS /api/v1/legacy/features/ HTTP/1.1" 200 0
+INFO 2025-08-21 07:49:22,712 basehttp 3680 140132292224704 "OPTIONS /api/v1/legacy/licenses/statistics/ HTTP/1.1" 200 0
+INFO 2025-08-21 07:49:22,712 basehttp 3680 140132283832000 "OPTIONS /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 200 0
+WARNING 2025-08-21 07:49:22,810 log 3680 140132283832000 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:49:22,816 basehttp 3680 140132283832000 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+INFO 2025-08-21 07:49:22,905 basehttp 3680 140132516787904 "GET /api/v1/legacy/licenses/statistics/ HTTP/1.1" 200 367
+ERROR 2025-08-21 07:49:22,941 log 3680 140132292224704 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:49:22,956 basehttp 3680 140132292224704 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 07:49:23,876 log 3680 140132292224704 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:49:23,878 basehttp 3680 140132292224704 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 07:49:24,016 log 3680 140132292224704 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:49:24,019 basehttp 3680 140132292224704 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 07:49:25,894 log 3680 140132292224704 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:49:25,895 basehttp 3680 140132292224704 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 07:49:26,068 log 3680 140132292224704 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:49:26,073 basehttp 3680 140132292224704 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 07:49:29,904 log 3680 140132292224704 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:49:29,905 basehttp 3680 140132292224704 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 07:49:30,117 log 3680 140132292224704 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:49:30,120 basehttp 3680 140132292224704 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 07:51:18,990 log 3680 140132516787904 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:51:19,004 basehttp 3680 140132516787904 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 07:51:19,041 log 3680 140132292224704 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:51:19,045 basehttp 3680 140132292224704 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 07:51:46,937 log 3680 140132283832000 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:51:46,948 basehttp 3680 140132283832000 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 07:51:46,986 log 3680 140132516787904 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:51:46,989 basehttp 3680 140132516787904 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 07:51:48,961 log 3680 140132516787904 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:51:48,961 basehttp 3680 140132516787904 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 07:51:49,048 log 3680 140132516787904 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:51:49,054 basehttp 3680 140132516787904 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 07:51:52,005 log 3680 140132283832000 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:51:52,014 basehttp 3680 140132283832000 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+INFO 2025-08-21 07:51:52,088 basehttp 3680 140132525180608 "GET /api/v1/legacy/licenses/statistics/ HTTP/1.1" 200 367
+ERROR 2025-08-21 07:51:52,187 log 3680 140132516787904 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:51:52,196 basehttp 3680 140132516787904 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 07:51:53,233 log 3680 140132516787904 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:51:53,240 basehttp 3680 140132516787904 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 07:51:53,287 log 3680 140132525180608 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:51:53,292 basehttp 3680 140132525180608 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 07:51:55,252 log 3680 140132525180608 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:51:55,252 basehttp 3680 140132525180608 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 07:51:55,358 log 3680 140132525180608 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:51:55,365 basehttp 3680 140132525180608 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 07:52:02,451 log 3680 140132300617408 Not Found: /
+WARNING 2025-08-21 07:52:02,452 basehttp 3680 140132300617408 "GET / HTTP/1.1" 404 2809
+WARNING 2025-08-21 07:52:06,507 log 3680 140132516787904 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 07:52:06,520 basehttp 3680 140132516787904 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 07:52:06,607 log 3680 140132525180608 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 07:52:06,612 basehttp 3680 140132525180608 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+INFO 2025-08-21 07:52:36,214 basehttp 3680 140132283832000 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 07:52:36,215 basehttp 3680 140132525180608 "GET /api/v1/memorials/ HTTP/1.1" 200 2615
+INFO 2025-08-21 07:52:36,216 basehttp 3680 140132516787904 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1844
+INFO 2025-08-21 07:52:36,363 basehttp 3680 140132267046592 "GET /media/memorials/WhatsApp_Image_2025-08-21_at_8.37.24_AM.jpeg HTTP/1.1" 304 0
+INFO 2025-08-21 07:53:13,986 basehttp 3680 140132516787904 "OPTIONS /api/v1/memorials/search/?search=har HTTP/1.1" 200 0
+INFO 2025-08-21 07:53:14,005 basehttp 3680 140132516787904 "GET /api/v1/memorials/search/?search=har HTTP/1.1" 200 2615
+INFO 2025-08-21 07:53:14,172 basehttp 3680 140132516787904 "OPTIONS /api/v1/memorials/search/?search=harr HTTP/1.1" 200 0
+INFO 2025-08-21 07:53:14,189 basehttp 3680 140132516787904 "GET /api/v1/memorials/search/?search=harr HTTP/1.1" 200 2615
+INFO 2025-08-21 07:53:17,539 basehttp 3680 140132516787904 "OPTIONS /api/v1/memorials/search/?search=hda HTTP/1.1" 200 0
+INFO 2025-08-21 07:53:17,549 basehttp 3680 140132516787904 "GET /api/v1/memorials/search/?search=hda HTTP/1.1" 200 2615
+INFO 2025-08-21 07:53:20,947 basehttp 3680 140132516787904 "OPTIONS /api/v1/memorials/search/?search=dav HTTP/1.1" 200 0
+INFO 2025-08-21 07:53:20,958 basehttp 3680 140132516787904 "GET /api/v1/memorials/search/?search=dav HTTP/1.1" 200 2615
+INFO 2025-08-21 07:53:21,175 basehttp 3680 140132516787904 "OPTIONS /api/v1/memorials/search/?search=davi HTTP/1.1" 200 0
+INFO 2025-08-21 07:53:21,197 basehttp 3680 140132516787904 "GET /api/v1/memorials/search/?search=davi HTTP/1.1" 200 2615
+INFO 2025-08-21 07:53:21,733 basehttp 3680 140132516787904 "OPTIONS /api/v1/memorials/search/?search=david HTTP/1.1" 200 0
+INFO 2025-08-21 07:53:21,755 basehttp 3680 140132516787904 "GET /api/v1/memorials/search/?search=david HTTP/1.1" 200 2615
