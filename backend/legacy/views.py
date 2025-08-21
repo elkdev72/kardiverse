@@ -231,19 +231,19 @@ class LicenseFeatureViewSet(viewsets.ModelViewSet):
     serializer_class = LicenseFeatureSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['feature_type', 'is_active']
+    filterset_fields = ['category', 'is_active']
     search_fields = ['name', 'description']
-    ordering_fields = ['name', 'feature_type']
+    ordering_fields = ['name', 'category']
     ordering = ['name']
     
     @action(detail=False, methods=['get'])
     def by_category(self, request):
         """Get features grouped by category"""
-        categories = LicenseFeature.objects.values_list('feature_type', flat=True).distinct()
+        categories = LicenseFeature.objects.values_list('category', flat=True).distinct()
         data = {}
         
         for category in categories:
-            features = self.get_queryset().filter(feature_type=category)
+            features = self.get_queryset().filter(category=category)
             data[category] = LicenseFeatureSerializer(features, many=True, context={'request': request}).data
         
         return Response(data)

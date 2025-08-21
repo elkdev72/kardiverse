@@ -129,8 +129,8 @@ const Gallery = () => {
               onClick={() => handleReligionFilter('Christian')}
               className="bg-divine-gold/20 text-eternal-bronze border-divine-gold/30 hover:bg-divine-gold/30"
             >
-              <Cross className="w-4 h-4 mr-2" />
-              Christian
+            <Cross className="w-4 h-4 mr-2" />
+            Christian
             </Button>
             <Button
               variant={viewMode === 'muslim' ? 'default' : 'outline'}
@@ -138,8 +138,8 @@ const Gallery = () => {
               onClick={() => handleReligionFilter('Muslim')}
               className="bg-heavenly-blue/20 text-primary border-heavenly-blue/30 hover:bg-heavenly-blue/30"
             >
-              <Moon className="w-4 h-4 mr-2" />
-              Muslim
+            <Moon className="w-4 h-4 mr-2" />
+            Muslim
             </Button>
           </div>
 

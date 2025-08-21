@@ -612,3 +612,1103 @@ INFO 2025-08-21 07:53:21,175 basehttp 3680 140132516787904 "OPTIONS /api/v1/memo
 INFO 2025-08-21 07:53:21,197 basehttp 3680 140132516787904 "GET /api/v1/memorials/search/?search=davi HTTP/1.1" 200 2615
 INFO 2025-08-21 07:53:21,733 basehttp 3680 140132516787904 "OPTIONS /api/v1/memorials/search/?search=david HTTP/1.1" 200 0
 INFO 2025-08-21 07:53:21,755 basehttp 3680 140132516787904 "GET /api/v1/memorials/search/?search=david HTTP/1.1" 200 2615
+INFO 2025-08-21 07:54:51,669 autoreload 48474 140500080409536 Watching for file changes with StatReloader
+INFO 2025-08-21 07:54:53,397 basehttp 48474 140500007028416 "GET /admin/ HTTP/1.1" 200 14077
+INFO 2025-08-21 07:54:53,517 basehttp 48474 140500007028416 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-08-21 07:54:54,571 basehttp 48474 140500007028416 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-08-21 08:01:42,390 basehttp 48474 140500007028416 "GET /admin/timeline/timelinestory/ HTTP/1.1" 200 20017
+INFO 2025-08-21 08:01:42,518 basehttp 48474 140500007028416 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 08:01:42,555 basehttp 48474 140500007028416 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-08-21 08:01:47,781 basehttp 48474 140500007028416 "GET /admin/timeline/timelinestory/1/change/ HTTP/1.1" 200 23545
+INFO 2025-08-21 08:01:47,867 basehttp 48474 140500007028416 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 08:02:22,390 basehttp 48474 140499785610944 "GET /api/v1/memorials/ HTTP/1.1" 200 2615
+INFO 2025-08-21 08:02:22,397 basehttp 48474 140499768825536 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 08:02:22,399 basehttp 48474 140499777218240 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1844
+INFO 2025-08-21 08:02:22,401 basehttp 48474 140499760432832 "GET /api/v1/memorials/search/?search=david HTTP/1.1" 200 2615
+INFO 2025-08-21 08:02:27,970 basehttp 48474 140499760432832 "GET /api/v1/memorials/search/?search=davi HTTP/1.1" 200 2615
+INFO 2025-08-21 08:02:28,179 basehttp 48474 140499760432832 "GET /api/v1/memorials/search/?search=dav HTTP/1.1" 200 2615
+INFO 2025-08-21 08:02:51,090 basehttp 48474 140500007028416 "GET /admin/timeline/timelinestory/ HTTP/1.1" 200 20017
+INFO 2025-08-21 08:02:51,159 basehttp 48474 140500007028416 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 08:06:33,156 basehttp 48474 140500007028416 "GET /admin/wakeroom/wakeroomfeature/ HTTP/1.1" 200 18819
+INFO 2025-08-21 08:06:33,285 basehttp 48474 140500007028416 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 08:06:48,732 basehttp 48474 140500007028416 "GET /admin/wakeroom/wakeroomsession/ HTTP/1.1" 200 15943
+INFO 2025-08-21 08:06:48,820 basehttp 48474 140500007028416 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 08:06:56,412 basehttp 48474 140500007028416 "GET /admin/wakeroom/wakeroomfeature/ HTTP/1.1" 200 18819
+INFO 2025-08-21 08:06:56,499 basehttp 48474 140500007028416 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 08:20:48,263 basehttp 48474 140499998635712 "GET /api/v1/memorials/ HTTP/1.1" 200 2615
+INFO 2025-08-21 08:20:48,287 basehttp 48474 140499760432832 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1844
+INFO 2025-08-21 08:20:48,293 basehttp 48474 140499777218240 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+WARNING 2025-08-21 08:20:51,060 log 48474 140499760432832 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 08:20:51,061 basehttp 48474 140499760432832 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+INFO 2025-08-21 08:20:51,113 basehttp 48474 140499998635712 "GET /api/v1/legacy/licenses/statistics/ HTTP/1.1" 200 367
+ERROR 2025-08-21 08:20:51,227 log 48474 140499777218240 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 08:20:51,243 basehttp 48474 140499777218240 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 08:20:52,083 log 48474 140499777218240 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 08:20:52,084 basehttp 48474 140499777218240 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 08:20:52,308 log 48474 140499777218240 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 08:20:52,311 basehttp 48474 140499777218240 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 08:20:54,100 log 48474 140499777218240 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 08:20:54,101 basehttp 48474 140499777218240 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 08:20:54,351 log 48474 140499777218240 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 08:20:54,354 basehttp 48474 140499777218240 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+WARNING 2025-08-21 08:20:58,112 log 48474 140499777218240 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 08:20:58,112 basehttp 48474 140499777218240 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 08:20:58,400 log 48474 140499777218240 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 154, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 66, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 18, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/rest_framework/backends.py", line 49, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+    ...<2 lines>...
+            fields = filterset_fields
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 82, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django_filters/filterset.py", line 371, in get_filters
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: 'Meta.fields' must not contain non-model field names: feature_type
+ERROR 2025-08-21 08:20:58,403 basehttp 48474 140499777218240 "GET /api/v1/legacy/features/ HTTP/1.1" 500 131105
+INFO 2025-08-21 08:23:26,687 autoreload 48474 140500080409536 /home/elkdev72/Desktop/kardiverse/backend/legacy/views.py changed, reloading.
+INFO 2025-08-21 08:23:28,410 autoreload 56670 140718958152640 Watching for file changes with StatReloader
+WARNING 2025-08-21 08:23:31,734 log 56670 140718875244224 Not Found: /api/v1/legacy/licenses/fomo_250/
+WARNING 2025-08-21 08:23:31,742 basehttp 56670 140718875244224 "GET /api/v1/legacy/licenses/fomo_250/ HTTP/1.1" 404 23
+ERROR 2025-08-21 08:23:31,921 log 56670 140718883636928 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:23:31,941 basehttp 56670 140718883636928 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+INFO 2025-08-21 08:24:36,037 basehttp 56670 140718875244224 "OPTIONS /api/v1/legacy/licenses/featured/ HTTP/1.1" 200 0
+ERROR 2025-08-21 08:24:36,149 log 56670 140718883636928 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+INFO 2025-08-21 08:24:36,150 basehttp 56670 140718875244224 "GET /api/v1/legacy/licenses/featured/ HTTP/1.1" 200 1516
+ERROR 2025-08-21 08:24:36,158 basehttp 56670 140718883636928 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+INFO 2025-08-21 08:24:38,796 basehttp 56670 140718883636928 "GET /api/v1/legacy/licenses/featured/ HTTP/1.1" 200 1516
+INFO 2025-08-21 08:24:38,869 basehttp 56670 140718865802944 "GET /api/v1/legacy/licenses/statistics/ HTTP/1.1" 200 367
+ERROR 2025-08-21 08:24:38,878 log 56670 140718875244224 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:24:38,888 basehttp 56670 140718875244224 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+ERROR 2025-08-21 08:24:40,037 log 56670 140718875244224 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:24:40,071 basehttp 56670 140718875244224 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+ERROR 2025-08-21 08:24:42,121 log 56670 140718875244224 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:24:42,124 basehttp 56670 140718875244224 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+ERROR 2025-08-21 08:24:46,173 log 56670 140718875244224 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:24:46,177 basehttp 56670 140718875244224 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+WARNING 2025-08-21 08:27:20,852 log 56670 140718857410240 Not Found: /
+WARNING 2025-08-21 08:27:20,854 basehttp 56670 140718857410240 "GET / HTTP/1.1" 404 2809
+INFO 2025-08-21 08:29:58,005 autoreload 58719 140024389888960 Watching for file changes with StatReloader
+INFO 2025-08-21 08:30:01,283 basehttp 58719 140024240273088 "GET /api/v1/legacy/licenses/featured/ HTTP/1.1" 200 1516
+ERROR 2025-08-21 08:30:01,407 log 58719 140024248665792 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:30:01,415 basehttp 58719 140024248665792 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+ERROR 2025-08-21 08:30:02,509 log 58719 140024248665792 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:30:02,513 basehttp 58719 140024248665792 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+ERROR 2025-08-21 08:30:04,570 log 58719 140024248665792 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:30:04,574 basehttp 58719 140024248665792 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+ERROR 2025-08-21 08:30:08,658 log 58719 140024248665792 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:30:08,664 basehttp 58719 140024248665792 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+INFO 2025-08-21 08:31:26,256 basehttp 58719 140024240273088 "GET /api/v1/legacy/licenses/featured/ HTTP/1.1" 200 1516
+INFO 2025-08-21 08:31:26,270 basehttp 58719 140024230831808 "GET /api/v1/legacy/licenses/statistics/ HTTP/1.1" 200 367
+ERROR 2025-08-21 08:31:26,365 log 58719 140024248665792 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:31:26,380 basehttp 58719 140024248665792 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+ERROR 2025-08-21 08:31:27,538 log 58719 140024248665792 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:31:27,551 basehttp 58719 140024248665792 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+ERROR 2025-08-21 08:31:29,603 log 58719 140024248665792 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:31:29,607 basehttp 58719 140024248665792 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+ERROR 2025-08-21 08:31:33,694 log 58719 140024248665792 Internal Server Error: /api/v1/legacy/features/
+Traceback (most recent call last):
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py", line 18, in to_representation
+    data = super().to_representation(instance)
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ~~~~~~~~~~~~~~~~^
+        source, info, model, depth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/elkdev72/Desktop/kardiverse/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Field name `feature_type` is not valid for model `LicenseFeature` in `legacy.serializers.LicenseFeatureSerializer`.
+ERROR 2025-08-21 08:31:33,699 basehttp 58719 140024248665792 "GET /api/v1/legacy/features/ HTTP/1.1" 500 154467
+INFO 2025-08-21 08:32:28,926 autoreload 58719 140024389888960 /home/elkdev72/Desktop/kardiverse/backend/legacy/serializers.py changed, reloading.
+INFO 2025-08-21 08:32:29,708 autoreload 59566 140692590230464 Watching for file changes with StatReloader
+INFO 2025-08-21 08:34:10,781 basehttp 59566 140692516144832 "GET /api/v1/legacy/features/ HTTP/1.1" 200 1141
+INFO 2025-08-21 08:34:10,794 basehttp 59566 140692507752128 "GET /api/v1/legacy/licenses/featured/ HTTP/1.1" 200 1516
+INFO 2025-08-21 08:34:10,815 basehttp 59566 140692499359424 "GET /api/v1/legacy/licenses/statistics/ HTTP/1.1" 200 367
+INFO 2025-08-21 08:34:27,810 basehttp 59566 140692489918144 "GET /admin/legacy/legacylicense/ HTTP/1.1" 200 25487
+INFO 2025-08-21 08:34:27,885 basehttp 59566 140692489918144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 08:34:39,600 basehttp 59566 140692489918144 "GET /admin/legacy/licensefeature/ HTTP/1.1" 200 20675
+INFO 2025-08-21 08:34:39,680 basehttp 59566 140692489918144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 08:34:43,038 basehttp 59566 140692489918144 "GET /admin/legacy/licensefeature/5/change/ HTTP/1.1" 200 17233
+INFO 2025-08-21 08:34:43,108 basehttp 59566 140692489918144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-21 08:34:45,957 basehttp 59566 140692489918144 "GET /admin/legacy/licensepurchase/ HTTP/1.1" 200 15034
+INFO 2025-08-21 08:35:25,123 basehttp 59566 140692499359424 "OPTIONS /api/v1/memorials/ HTTP/1.1" 200 0
+INFO 2025-08-21 08:35:25,145 basehttp 59566 140692507752128 "OPTIONS /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 0
+INFO 2025-08-21 08:35:25,148 basehttp 59566 140692499359424 "OPTIONS /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 0
+INFO 2025-08-21 08:35:25,185 basehttp 59566 140692516144832 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1844
+INFO 2025-08-21 08:35:25,196 basehttp 59566 140692507752128 "GET /api/v1/memorials/ HTTP/1.1" 200 2615
+INFO 2025-08-21 08:35:25,228 basehttp 59566 140692499359424 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 08:35:25,376 basehttp 59566 140692471035584 "GET /media/memorials/WhatsApp_Image_2025-08-21_at_8.37.24_AM.jpeg HTTP/1.1" 304 0

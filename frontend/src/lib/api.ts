@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8080/api/v1';
+const API_BASE_URL = 'http://localhost:8000/api/v1';
 
 export interface ApiResponse<T> {
   data: T;
@@ -238,7 +238,7 @@ class ApiClient {
   }
 
   async getFomoLicenses(): Promise<LegacyLicense[]> {
-    return this.request<LegacyLicense[]>('/legacy/licenses/fomo_250/');
+    return this.request<LegacyLicense[]>('/legacy/licenses/featured/');
   }
 
   // WakeRoom API

@@ -8,8 +8,8 @@ class LicenseFeatureSerializer(serializers.ModelSerializer):
     class Meta:
         model = LicenseFeature
         fields = [
-            'id', 'name', 'description', 'icon_name', 'icon_component', 'is_active',
-            'feature_type', 'technical_requirements'
+            'id', 'name', 'description', 'icon_name', 'icon_component',
+            'is_active', 'category'
         ]
         read_only_fields = ['id']
     
