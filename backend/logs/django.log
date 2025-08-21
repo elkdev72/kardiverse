@@ -1732,3 +1732,27 @@ WARNING 2025-08-21 08:45:44,883 basehttp 63030 140196926453440 "GET /accounts/pr
 INFO 2025-08-21 08:53:31,632 basehttp 63030 140196918060736 "GET /api/v1/memorials/ HTTP/1.1" 200 2615
 INFO 2025-08-21 08:53:31,658 basehttp 63030 140196909668032 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1844
 INFO 2025-08-21 08:53:31,660 basehttp 63030 140196901275328 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 09:23:04,601 basehttp 63030 140196901275328 "GET /api/v1/memorials/ HTTP/1.1" 200 2615
+INFO 2025-08-21 09:23:04,620 basehttp 63030 140196909668032 "GET /api/v1/memorials/by_religion/?religion=Christian HTTP/1.1" 200 1844
+INFO 2025-08-21 09:23:04,651 basehttp 63030 140196901275328 "GET /api/v1/memorials/by_religion/?religion=Muslim HTTP/1.1" 200 848
+INFO 2025-08-21 10:10:21,900 basehttp 63030 140196901275328 "GET /admin/ HTTP/1.1" 200 14077
+INFO 2025-08-21 10:10:21,963 basehttp 63030 140196901275328 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-08-21 10:10:22,685 basehttp 63030 140196901275328 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+WARNING 2025-08-21 10:19:56,719 log 63030 140196901275328 Not Found: /api/
+WARNING 2025-08-21 10:19:56,719 basehttp 63030 140196901275328 "GET /api/ HTTP/1.1" 404 2839
+INFO 2025-08-21 10:20:02,273 basehttp 63030 140196901275328 "GET /api/v1/ HTTP/1.1" 200 7256
+INFO 2025-08-21 10:20:02,344 basehttp 63030 140196901275328 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,360 basehttp 63030 140196909668032 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,360 basehttp 63030 140196901275328 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,362 basehttp 63030 140196918060736 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,373 basehttp 63030 140196926453440 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,374 basehttp 63030 140196889036480 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,374 basehttp 63030 140196909668032 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,374 basehttp 63030 140196918060736 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,391 basehttp 63030 140196880643776 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,381 basehttp 63030 140196926453440 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,386 basehttp 63030 140196889036480 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:02,709 basehttp 63030 140196889036480 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:23,630 basehttp 63030 140196889036480 "GET /api/v1/wakeroom/experiences/ HTTP/1.1" 200 20770
+INFO 2025-08-21 10:20:24,004 basehttp 63030 140196889036480 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+INFO 2025-08-21 10:20:40,445 basehttp 63030 140196889036480 "GET /api/v1/ HTTP/1.1" 200 7256
