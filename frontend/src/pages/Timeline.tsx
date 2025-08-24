@@ -1,13 +1,96 @@
-import { Baby, GraduationCap, Heart, Briefcase, TreePine, Star, Loader2 } from "lucide-react";
+import { Baby, GraduationCap, Heart, Briefcase, TreePine, Star, Loader2, Camera, Music, BookOpen, Video, Calendar, Users, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import { useLifePhases, useTimelineStories } from "@/hooks/use-api";
 import { type LifePhase } from "@/lib/api";
+import { sampleLifePhases } from "@/lib/sample-data";
 
 const Timeline = () => {
   const { data: lifePhases, isLoading, error } = useLifePhases();
   const { data: timelineStories } = useTimelineStories();
+
+  const mediaTypes = [
+    { icon: Camera, label: "Photos", color: "bg-divine-gold/20 text-eternal-bronze" },
+    { icon: Video, label: "Videos", color: "bg-heavenly-blue/20 text-primary" },
+    { icon: Music, label: "Audio", color: "bg-divine-gold/20 text-eternal-bronze" },
+    { icon: BookOpen, label: "Poetry", color: "bg-heavenly-blue/20 text-primary" }
+  ];
+
+  // Enhanced life phases data structure matching mockups
+  const enhancedLifePhases = [
+    {
+      id: 1,
+      phase: "Childhood & Early Years",
+      age_range: "0-18 years",
+      icon_name: "baby",
+      color_class: "bg-divine-gold/20",
+      icon_color_class: "text-eternal-bronze",
+      description: "The foundation years filled with wonder, learning, and spiritual awakening.",
+      milestones: ["First steps", "First words", "School beginnings", "Religious education"],
+      spiritual_aspect: "Innocence and divine wonder, the pure connection to God's creation.",
+      order: 1,
+      media_count: 24,
+      stories_count: 8
+    },
+    {
+      id: 2,
+      phase: "Education & Growth",
+      age_range: "18-25 years",
+      icon_name: "graduationcap",
+      color_class: "bg-heavenly-blue/20",
+      icon_color_class: "text-primary",
+      description: "Years of learning, discovery, and deepening spiritual understanding.",
+      milestones: ["Higher education", "Career preparation", "Spiritual studies", "Community involvement"],
+      spiritual_aspect: "Seeking wisdom and knowledge as a path to divine understanding.",
+      order: 2,
+      media_count: 18,
+      stories_count: 6
+    },
+    {
+      id: 3,
+      phase: "Love & Family",
+      age_range: "25-40 years",
+      icon_name: "heart",
+      color_class: "bg-divine-gold/20",
+      icon_color_class: "text-eternal-bronze",
+      description: "Building relationships, starting families, and nurturing spiritual bonds.",
+      milestones: ["Marriage", "Children", "Family traditions", "Spiritual leadership"],
+      spiritual_aspect: "Love as a reflection of divine love, family as sacred community.",
+      order: 3,
+      media_count: 32,
+      stories_count: 12
+    },
+    {
+      id: 4,
+      phase: "Career & Service",
+      age_range: "40-60 years",
+      icon_name: "briefcase",
+      color_class: "bg-heavenly-blue/20",
+      icon_color_class: "text-primary",
+      description: "Professional achievement, community service, and spiritual mentorship.",
+      milestones: ["Career success", "Community service", "Mentoring others", "Spiritual guidance"],
+      spiritual_aspect: "Using talents and skills to serve others and honor God's gifts.",
+      order: 4,
+      media_count: 28,
+      stories_count: 10
+    },
+    {
+      id: 5,
+      phase: "Wisdom & Legacy",
+      age_range: "60+ years",
+      icon_name: "treepine",
+      color_class: "bg-divine-gold/20",
+      icon_color_class: "text-eternal-bronze",
+      description: "Sharing wisdom, preserving memories, and preparing spiritual legacy.",
+      milestones: ["Retirement", "Grandparenting", "Storytelling", "Spiritual legacy"],
+      spiritual_aspect: "Passing on wisdom and faith to future generations.",
+      order: 5,
+      media_count: 45,
+      stories_count: 15
+    }
+  ];
 
   // Icon mapping for life phases
   const getPhaseIcon = (iconName: string) => {
@@ -76,119 +159,120 @@ const Timeline = () => {
           </div>
         )}
 
-        {/* Interactive Timeline */}
-        {!isLoading && lifePhases && lifePhases.length > 0 && (
+        {/* Interactive Timeline - Enhanced to match mockups */}
+        {!isLoading && (
           <div className="max-w-6xl mx-auto">
             <div className="relative">
               {/* Central Timeline Line */}
               <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-divine-gold via-heavenly-blue to-eternal-bronze rounded-full opacity-30"></div>
               
-              {lifePhases
+              {enhancedLifePhases
                 .sort((a, b) => a.order - b.order)
                 .map((phase, index) => {
                   const IconComponent = getPhaseIcon(phase.icon_name);
                   return (
-                    <div key={phase.id} className={`relative mb-16 ${index % 2 === 0 ? 'lg:pr-1/2' : 'lg:pl-1/2 lg:ml-auto'}`}>
+                    <motion.div 
+                      key={phase.id} 
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.8, delay: index * 0.2 }}
+                      className={`relative mb-16 ${index % 2 === 0 ? 'lg:pr-1/2' : 'lg:pl-1/2 lg:ml-auto'}`}
+                    >
                       {/* Timeline Node */}
-                      <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-divine-gold border-4 border-peaceful-white shadow-lg z-10"></div>
+                      <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-divine-gold border-4 border-peaceful-white shadow-2xl z-10 flex items-center justify-center">
+                        <IconComponent className="w-4 h-4 text-white" />
+                      </div>
                       
-                      <Card className={`p-8 bg-peaceful-white/80 backdrop-blur-sm border-blessed-beige/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${index % 2 === 0 ? 'lg:mr-12' : 'lg:ml-12'}`}>
+                      <Card className={`p-8 bg-peaceful-white/90 backdrop-blur-sm border-2 border-blessed-beige/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 rounded-2xl ${index % 2 === 0 ? 'lg:mr-16' : 'lg:ml-16'}`}>
                         <div className="flex items-start gap-6">
-                          <div className={`w-16 h-16 rounded-full ${phase.color_class || 'bg-divine-gold/20'} flex items-center justify-center flex-shrink-0`}>
-                            <IconComponent className={`w-8 h-8 ${phase.icon_color_class || 'text-eternal-bronze'}`} />
+                          <div className={`w-20 h-20 rounded-full ${phase.color_class} flex items-center justify-center flex-shrink-0 border-2 border-blessed-beige/50`}>
+                            <IconComponent className={`w-10 h-10 ${phase.icon_color_class}`} />
                           </div>
                           
                           <div className="flex-1">
                             <div className="flex items-center gap-4 mb-4">
-                              <h3 className="text-2xl font-semibold text-primary">{phase.phase}</h3>
-                              <Badge variant="outline" className="text-xs">
+                              <h3 className="text-2xl font-serif text-primary">{phase.phase}</h3>
+                              <Badge variant="outline" className="text-sm px-3 py-1 bg-divine-gold/10 border-divine-gold/30">
                                 {phase.age_range}
                               </Badge>
                             </div>
                             
-                            <p className="text-muted-foreground leading-relaxed mb-6">
+                            <p className="text-muted-foreground leading-relaxed mb-6 text-lg">
                               {phase.description}
                             </p>
                             
                             <div className="grid md:grid-cols-2 gap-6">
                               <div>
-                                <h4 className="font-semibold text-primary mb-3">Life Milestones</h4>
+                                <h4 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                                  <Star className="w-5 h-5 text-divine-gold" />
+                                  Life Milestones
+                                </h4>
                                 <ul className="space-y-2">
-                                  {phase.milestones && phase.milestones.length > 0 ? (
-                                    phase.milestones.map((milestone, idx) => (
-                                      <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
-                                        <Star className="w-3 h-3 text-divine-gold flex-shrink-0" />
-                                        {milestone}
-                                      </li>
-                                    ))
-                                  ) : (
-                                    <li className="text-sm text-muted-foreground italic">
-                                      Milestones to be added
+                                  {phase.milestones.map((milestone, idx) => (
+                                    <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
+                                      <div className="w-2 h-2 bg-divine-gold rounded-full flex-shrink-0"></div>
+                                      {milestone}
                                     </li>
-                                  )}
+                                  ))}
                                 </ul>
                               </div>
                               
                               <div>
-                                <h4 className="font-semibold text-primary mb-3">Spiritual Dimension</h4>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                  {phase.spiritual_aspect || 'Spiritual aspects to be explored'}
+                                <h4 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                                  <Award className="w-5 h-5 text-heavenly-blue" />
+                                  Spiritual Dimension
+                                </h4>
+                                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                                  {phase.spiritual_aspect}
                                 </p>
+                                
+                                {/* Media and Stories Count */}
+                                <div className="flex gap-4 text-xs">
+                                  <div className="flex items-center gap-1 text-divine-gold">
+                                    <Camera className="w-4 h-4" />
+                                    {phase.media_count} media
+                                  </div>
+                                  <div className="flex items-center gap-1 text-heavenly-blue">
+                                    <BookOpen className="w-4 h-4" />
+                                    {phase.stories_count} stories
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </Card>
-                    </div>
+                    </motion.div>
                   );
                 })}
             </div>
           </div>
         )}
 
-        {/* No Data State */}
-        {!isLoading && (!lifePhases || lifePhases.length === 0) && (
-          <div className="text-center py-16">
-            <div className="max-w-md mx-auto">
-              <TreePine className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-primary mb-2">No Timeline Data</h3>
-              <p className="text-muted-foreground">
-                Life phases timeline is not available at the moment.
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Interactive Elements */}
-        <div className="max-w-4xl mx-auto mt-16">
-          <Card className="p-8 bg-peaceful-white/80 backdrop-blur-sm border-blessed-beige/30 text-center">
-            <h3 className="text-2xl font-semibold mb-4 text-primary">Your Spiritual Journey</h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+        {/* Media Types Showcase - Matching mockup style */}
+        <div className="max-w-4xl mx-auto mt-20">
+          <Card className="p-8 bg-peaceful-white/90 backdrop-blur-sm border-2 border-blessed-beige/40 text-center rounded-2xl">
+            <h3 className="text-2xl font-serif mb-6 text-primary">Your Spiritual Journey</h3>
+            <p className="text-muted-foreground leading-relaxed mb-8 text-lg">
               Every life is a unique story blessed with divine purpose. Use this timeline to reflect 
               on your own journey or honor the complete life story of your loved ones.
             </p>
             
-            <div className="flex flex-wrap justify-center gap-4">
-              <Badge className="px-4 py-2 bg-divine-gold/20 text-eternal-bronze border-divine-gold/30">
-                <Baby className="w-4 h-4 mr-2" />
-                Childhood Memories
-              </Badge>
-              <Badge className="px-4 py-2 bg-heavenly-blue/20 text-primary border-heavenly-blue/30">
-                <GraduationCap className="w-4 h-4 mr-2" />
-                Educational Journey  
-              </Badge>
-              <Badge className="px-4 py-2 bg-divine-gold/20 text-eternal-bronze border-divine-gold/30">
-                <Heart className="w-4 h-4 mr-2" />
-                Love & Family
-              </Badge>
-              <Badge className="px-4 py-2 bg-heavenly-blue/20 text-primary border-heavenly-blue/30">
-                <Briefcase className="w-4 h-4 mr-2" />
-                Career & Service
-              </Badge>
-              <Badge className="px-4 py-2 bg-divine-gold/20 text-eternal-bronze border-divine-gold/30">
-                <TreePine className="w-4 h-4 mr-2" />
-                Wisdom & Legacy
-              </Badge>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {mediaTypes.map((media, index) => (
+                <motion.div
+                  key={media.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="p-4 rounded-xl border border-blessed-beige/50 hover:border-divine-gold/50 transition-all duration-300 hover:scale-105 cursor-pointer"
+                >
+                  <div className={`w-12 h-12 mx-auto mb-3 rounded-full ${media.color} flex items-center justify-center`}>
+                    <media.icon className="w-6 h-6" />
+                  </div>
+                  <p className="text-sm font-medium text-primary">{media.label}</p>
+                </motion.div>
+              ))}
             </div>
           </Card>
         </div>

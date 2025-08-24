@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import { useLicenseFeatures, useFomoLicenses, useLegacyStats } from "@/hooks/use-api";
 import { type LicenseFeature, type LegacyLicense } from "@/lib/api";
+import { sampleLicenseFeatures, sampleFomoLicenses } from "@/lib/sample-data";
 
 const Legacy = () => {
   const { data: licenseFeatures, isLoading: isLoadingFeatures } = useLicenseFeatures();

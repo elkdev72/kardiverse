@@ -278,15 +278,4 @@ class ApiClient {
 }
 
 // Export singleton instance
-export const apiClient = new ApiClient();
-
-// Export types
-export type {
-  Memorial,
-  LifePhase,
-  TimelineStory,
-  LicenseFeature,
-  LegacyLicense,
-  WakeRoomExperience,
-  WakeRoomFeature,
-}; 
+export const apiClient = new ApiClient(); 
